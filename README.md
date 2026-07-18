@@ -451,15 +451,6 @@ The dashboard also produces **browser push notifications** and a **Web Audio API
 - REST API authentication (API key or JWT)
 - Unit test suite (pytest) with CI via GitHub Actions
 
-<hr>
-
-## 👨‍💻 Author
-
-**Umesh Shivaji Bhabad**
-📫 umeshbhabad9@gmail.com
-🔗 [GitHub Profile](https://github.com/UmeshBhabad)
-
-<hr>
 
 ## 📄 License
 
