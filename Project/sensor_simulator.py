@@ -1,38 +1,3 @@
-"""
-sensor_simulator.py
-===================
-Motor 1 — Three-Phase Induction Motor
-Sensor data simulator for:
-  • Normal operation
-  • Fault 1: Bearing Fault
-  • Fault 2: Stator Winding Fault (turn-to-turn short)
-  • Fault 3: Rotor Bar Fault (broken rotor bars)
-
-Each scenario generates time-series sensor readings at a configurable
-sample rate and duration, returned as a pandas DataFrame and optionally
-saved to CSV.
-
-Sensor channels produced
-------------------------
-  time_s          - simulation time (seconds)
-  vibration_x_g   - radial vibration, X-axis (g)
-  vibration_y_g   - radial vibration, Y-axis (g)
-  vibration_z_g   - axial vibration, Z-axis (g)
-  current_a_A     - phase-A stator current (A)
-  current_b_A     - phase-B stator current (A)
-  current_c_A     - phase-C stator current (A)
-  temperature_C   - bearing / winding temperature (°C)
-  speed_rpm       - shaft speed (RPM)
-  sound_dB        - acoustic emission level (dB)
-  scenario        - label string
-
-Usage
------
-    from sensor_simulator import generate_scenario, SCENARIOS
-    df = generate_scenario("bearing_fault", duration_s=10, fs=1000)
-    df.to_csv("bearing_fault.csv", index=False)
-"""
-
 import numpy as np
 import pandas as pd
 from typing import Literal
@@ -61,7 +26,6 @@ ScenarioLabel = Literal["normal", "bearing_fault", "stator_fault", "rotor_bar_fa
 # Random-seed helper
 # ---------------------------------------------------------------------------
 RNG_SEED = 42
-
 
 def _rng(seed=RNG_SEED):
     return np.random.default_rng(seed)

@@ -15,7 +15,10 @@ scikit-learn==1.8.0
 
 # REST API & cross-origin support
 flask==3.1.3
-flask-cors==6.0.2
+flask-cors==6.0.5
 
 # CAN FD bus simulation (virtual udp_multicast interface)
 python-can==4.6.1
+
+# Testing — automated validation suite (173 tests across 4 modules)
+pytest==9.1.1

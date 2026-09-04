@@ -3,10 +3,12 @@
 ---
 ### 1. sensor_simulator.py — Sensor Data Generator
 Basic run (generate all 4 scenarios, save CSVs):
-bashpython sensor_simulator.py
+    python sensor_simulator.py
+
 All argument variants:
-bash# Generate all scenarios (default: 5s, 5000 Hz)
-python sensor_simulator.py --scenario all
+
+# Generate all scenarios (default: 5s, 5000 Hz)
+    python sensor_simulator.py --scenario all
 
 ---
 
