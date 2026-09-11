@@ -102,6 +102,11 @@ Smart_Industrial_Automation/
 ├── Documentations/               # Project documentation files
 ├── Project/                      # Core project source files
 |    ├── tests/
+|    |     ├── conftest.py
+|    |     ├── test_api.py
+|    |     ├── test_canfd.py
+|    |     ├── test_ml.py
+|    |     ├── test_sensor.py
 |    ├── sensor_simulator.py   # Motor sensor data generator (4 fault scenarios × 2 motors)
 |    ├── can_node.py           # ESP32 CAN FD transmitter node simulator
 |    ├── ml_gateway.py         # Raspberry Pi gateway: CAN listener + ML + Flask REST API
